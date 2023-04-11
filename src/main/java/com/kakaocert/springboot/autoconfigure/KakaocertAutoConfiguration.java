@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 
-import com.kakaocert.api.KakaocertService;
-import com.kakaocert.api.KakaocertServiceImp;
+import com.barocert.kakaocert.KakaocertService;
+import com.barocert.kakaocert.KakaocertServiceImp;
 import com.kakaocert.springboot.autoconfigure.properties.BarocertServiceProperties;
 
 @Configuration
