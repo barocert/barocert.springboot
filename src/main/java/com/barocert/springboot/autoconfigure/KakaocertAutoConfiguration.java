@@ -1,4 +1,4 @@
-package com.kakaocert.springboot.autoconfigure;
+package com.barocert.springboot.autoconfigure;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,17 +12,17 @@ import org.springframework.context.annotation.Lazy;
 
 import com.barocert.kakaocert.KakaocertService;
 import com.barocert.kakaocert.KakaocertServiceImp;
-import com.kakaocert.springboot.autoconfigure.properties.BarocertServiceProperties;
+import com.barocert.springboot.autoconfigure.properties.KakaocertServiceProperties;
 
 @Configuration
 @ConditionalOnClass(KakaocertService.class)
-@EnableConfigurationProperties({BarocertServiceProperties.class})
+@EnableConfigurationProperties({KakaocertServiceProperties.class})
 public class KakaocertAutoConfiguration {
 
     private static final Logger logger = LoggerFactory.getLogger(KakaocertAutoConfiguration.class);
     
     @Autowired
-    private BarocertServiceProperties barocertServiceProperties;
+    private KakaocertServiceProperties kakaocertServiceProperties;
     
     @Lazy
     @Bean(name = "KakaocertService")
@@ -31,10 +31,10 @@ public class KakaocertAutoConfiguration {
 
         KakaocertServiceImp kakaocertServiceImp = new KakaocertServiceImp();
 
-        kakaocertServiceImp.setLinkID(barocertServiceProperties.getLinkID());
-        kakaocertServiceImp.setSecretKey(barocertServiceProperties.getSecretKey());
-        kakaocertServiceImp.setUseStaticIP(barocertServiceProperties.isUseStaticIP());
-        kakaocertServiceImp.setIPRestrictOnOff(barocertServiceProperties.isIsIPRestrictOnOff());
+        kakaocertServiceImp.setLinkID(kakaocertServiceProperties.getLinkID());
+        kakaocertServiceImp.setSecretKey(kakaocertServiceProperties.getSecretKey());
+        kakaocertServiceImp.setUseStaticIP(kakaocertServiceProperties.isUseStaticIP());
+        kakaocertServiceImp.setIPRestrictOnOff(kakaocertServiceProperties.isIsIPRestrictOnOff());
 
         logger.debug("KakaocertService Initialized");
 
