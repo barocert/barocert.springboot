@@ -35,6 +35,8 @@ public class KakaocertAutoConfiguration {
         kakaocertServiceImp.setSecretKey(kakaocertServiceProperties.getSecretKey());
         kakaocertServiceImp.setUseStaticIP(kakaocertServiceProperties.isUseStaticIP());
         kakaocertServiceImp.setIPRestrictOnOff(kakaocertServiceProperties.isIsIPRestrictOnOff());
+        kakaocertServiceImp.setServiceURL(kakaocertServiceProperties.getServiceURL());
+        kakaocertServiceImp.setAuthURL(kakaocertServiceProperties.getAuthURL());
 
         logger.debug("KakaocertService Initialized");
 

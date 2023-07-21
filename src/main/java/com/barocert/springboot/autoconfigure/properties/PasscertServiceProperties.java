@@ -2,11 +2,12 @@ package com.barocert.springboot.autoconfigure.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties(prefix = "kakaocert")
-public class KakaocertServiceProperties {
+@ConfigurationProperties(prefix = "passcert")
+public class PasscertServiceProperties {
 
     private String LinkID = null;
     private String SecretKey = null;
+    private String DecryptKey = null;
     private boolean IsIPRestrictOnOff = true;
     private boolean UseStaticIP = false;
     private boolean UseLocalTimeYN = true;
@@ -28,6 +29,15 @@ public class KakaocertServiceProperties {
     public void setSecretKey(String secretKey) {
         SecretKey = secretKey;
     }
+
+    public String getDecryptKey() {
+        return this.DecryptKey;
+    }
+
+    public void setDecryptKey(String DecryptKey) {
+        this.DecryptKey = DecryptKey;
+    }
+
 
     public boolean isIsIPRestrictOnOff() {
         return IsIPRestrictOnOff;
@@ -68,4 +78,5 @@ public class KakaocertServiceProperties {
     public void setAuthURL(String authURL) {
         this.authURL = authURL;
     }
+
 }
