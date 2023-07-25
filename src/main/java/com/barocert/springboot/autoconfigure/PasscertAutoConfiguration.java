@@ -33,7 +33,6 @@ public class PasscertAutoConfiguration {
 
         passcertServiceImp.setLinkID(passcertServiceProperties.getLinkID());
         passcertServiceImp.setSecretKey(passcertServiceProperties.getSecretKey());
-        passcertServiceImp.setDecryptKey(passcertServiceProperties.getDecryptKey());
         passcertServiceImp.setUseStaticIP(passcertServiceProperties.isUseStaticIP());
         passcertServiceImp.setIPRestrictOnOff(passcertServiceProperties.isIsIPRestrictOnOff());
         passcertServiceImp.setServiceURL(passcertServiceProperties.getServiceURL());

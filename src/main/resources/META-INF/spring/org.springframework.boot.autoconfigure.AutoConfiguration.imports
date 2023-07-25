@@ -1,1 +1,2 @@
 com.barocert.springboot.autoconfigure.KakaocertAutoConfiguration
+com.barocert.springboot.autoconfigure.PasscertAutoConfiguration
