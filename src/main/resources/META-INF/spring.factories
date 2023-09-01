@@ -1,3 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.barocert.springboot.autoconfigure.KakaocertAutoConfiguration,\
+com.barocert.springboot.autoconfigure.NavercertAutoConfiguration,\
 com.barocert.springboot.autoconfigure.PasscertAutoConfiguration
