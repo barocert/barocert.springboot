@@ -2,7 +2,6 @@ package com.barocert.springboot.autoconfigure;
 
 import com.barocert.navercert.NavercertService;
 import com.barocert.navercert.NavercertServiceImp;
-import com.barocert.springboot.autoconfigure.properties.KakaocertServiceProperties;
 import com.barocert.springboot.autoconfigure.properties.NavercertServiceProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
