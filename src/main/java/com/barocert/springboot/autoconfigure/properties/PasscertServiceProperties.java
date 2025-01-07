@@ -12,6 +12,8 @@ public class PasscertServiceProperties {
     private boolean UseLocalTimeYN = true;
     private String serviceURL = null;
     private String authURL = null;
+    private String proxyIP = null;
+    private Integer proxyPort = null;
 
     public String getLinkID() {
         return LinkID;
@@ -68,5 +70,13 @@ public class PasscertServiceProperties {
     public void setAuthURL(String authURL) {
         this.authURL = authURL;
     }
+
+    public String getProxyIP() { return proxyIP; }
+
+    public void setProxyIP(String proxyIP) { this.proxyIP = proxyIP; }
+
+    public Integer getProxyPort() { return proxyPort; }
+
+    public void setProxyPort(Integer proxyPort) { this.proxyPort = proxyPort; }
 
 }

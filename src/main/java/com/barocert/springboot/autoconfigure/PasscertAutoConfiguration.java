@@ -37,6 +37,8 @@ public class PasscertAutoConfiguration {
         passcertServiceImp.setIPRestrictOnOff(passcertServiceProperties.isIsIPRestrictOnOff());
         passcertServiceImp.setServiceURL(passcertServiceProperties.getServiceURL());
         passcertServiceImp.setAuthURL(passcertServiceProperties.getAuthURL());
+        passcertServiceImp.setProxyIP(passcertServiceProperties.getProxyIP());
+        passcertServiceImp.setProxyPort(passcertServiceProperties.getProxyPort());
 
         logger.debug("PasscertService Initialized");
 

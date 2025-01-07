@@ -37,6 +37,8 @@ public class KakaocertAutoConfiguration {
         kakaocertServiceImp.setIPRestrictOnOff(kakaocertServiceProperties.isIsIPRestrictOnOff());
         kakaocertServiceImp.setServiceURL(kakaocertServiceProperties.getServiceURL());
         kakaocertServiceImp.setAuthURL(kakaocertServiceProperties.getAuthURL());
+        kakaocertServiceImp.setProxyIP(kakaocertServiceProperties.getProxyIP());
+        kakaocertServiceImp.setProxyPort(kakaocertServiceProperties.getProxyPort());
 
         logger.debug("KakaocertService Initialized");
 

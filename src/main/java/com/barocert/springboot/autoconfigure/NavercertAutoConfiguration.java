@@ -36,6 +36,8 @@ public class NavercertAutoConfiguration {
         navercertServiceImp.setIPRestrictOnOff(navercertServiceProperties.isIsIPRestrictOnOff());
         navercertServiceImp.setServiceURL(navercertServiceProperties.getServiceURL());
         navercertServiceImp.setAuthURL(navercertServiceProperties.getAuthURL());
+        navercertServiceImp.setProxyIP(navercertServiceProperties.getProxyIP());
+        navercertServiceImp.setProxyPort(navercertServiceProperties.getProxyPort());
 
         logger.debug("NavercertService Initialized");
 
